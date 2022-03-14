@@ -11,4 +11,4 @@
 toc::[]
 
 == Hello World!
-This is the introduction to the **MyProject documentation**!
+This is the introduction to the maven generated **MyProject documentation** !
