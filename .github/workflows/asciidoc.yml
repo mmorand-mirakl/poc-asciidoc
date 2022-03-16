@@ -11,6 +11,8 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
+      - name: Install Mermaid CLI
+        run: npm install -g mermaid.cli
       - name: Generate doc
         run: "mvn clean asciidoctor:process-asciidoc"
       - name: Deploy docs to ghpages
