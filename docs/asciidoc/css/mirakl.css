@@ -1,0 +1,110 @@
+@import "asciidoctor.css";
+
+#header {
+    background-color: rgb(3, 24, 70);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-width: 100%;
+    height: 65px;
+    margin: 0;
+    z-index: 1000;
+    padding-left: 3em;
+}
+
+#header>h1 {
+    /*margin: 10px 0;*/
+
+}
+
+#header>h1:first-child {
+    background-image: url(../images/Logo-Mirakl-HorizontalWHITE.svg);
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-align: center;
+    margin-top: 15px;
+    line-height: 30px;
+    width: 100%;
+    text-decoration: none;
+    color: #ffffff;
+    /*line-height: 40px;*/
+    font-size: 32px;
+    font-weight: 50;
+    padding: 0;
+}
+
+#header>h1:only-child, body.toc2 #header>h1:nth-last-child(2) {
+    border-bottom: 0;
+}
+
+div#content {
+    padding-top: 65px;
+}
+
+#toc.toc2 {
+    margin-top: 0 !important;
+    background: transparent;
+    position: fixed;
+    width: 20em;
+    left: 0;
+    top: 65px;
+    border-right: 0 !important;
+    border-top-width: 0 !important;
+    border-bottom-width: 0 !important;
+    z-index: 1000;
+    padding: 1.25em 1em 1.25em 2em;
+    height: 100%;
+}
+
+#toc.toc2 #toctitle {
+    display: none;
+}
+
+#toc.toc2 > ul {
+    font-size: .9em;
+    margin-bottom: 0
+}
+
+#toc.toc2 ul ul {
+    margin-left: 0;
+    padding-left: 1em
+}
+
+#toc.toc2 ul.sectlevel0 ul.sectlevel1 {
+    padding-left:0;margin-top:.5em;margin-bottom:.5em}
+
+
+ul.sectlevel1  {
+    color: #666666 !important;
+    font-family: 'MuseoSans', Calibri, serif;
+    font-size: 0.9em;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1em;
+    border-left: solid 5px #031831;
+    border-right: none 0px #031831;
+    border-top: none 0px #666666;
+    border-bottom: none 0px #666666;
+    border-radius: 0px;
+    margin: 0px;
+    padding: 1px 15px 1px 10px;
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+    max-height: 80vh;
+    overflow-y: auto;
+    display: list-item;
+}
+#toc ul {
+    list-style: none;
+}
+
+#toc ul.sectlevel1 a {
+    color: #666666;
+}
+
+#content h1>a.link, h2>a.link, h3>a.link, #toctitle>a.link, .sidebarblock>.content>.title>a.link, h4>a.link, h5>a.link, h6>a.link {
+    color: #052c4d;
+}

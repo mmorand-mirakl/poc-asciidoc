@@ -53,6 +53,7 @@
                     <attributes>
                         <toc>left</toc>
                         <icons>font</icons>
+                        <linkcss/>
                         <source-highlighter>coderay</source-highlighter>
                     </attributes>
                 </configuration>

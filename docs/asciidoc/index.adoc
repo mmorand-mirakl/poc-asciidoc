@@ -1,17 +1,38 @@
-= MyProject documentation
+= Functional documentation
 :docinfo: shared
 :doctype: book
-:title: MyProject documentation
+:title: Functional documentation
 :toc: left
 :toclevels: 2
 :sectanchors:
 :sectlinks:
 :sectnums:
+:stylesheet: css/mirakl.css
 
 toc::[]
 
 == Hello World!
 This is the introduction to the maven generated **MyProject documentation** !!
+
+=== Sub menu
+This is sub part of hello world
+
+=== Flows
+
+[mermaid]
+----
+sequenceDiagram
+    participant Alice
+    participant Bob
+    Alice->>John: Hello John, how are you?
+    loop Healthcheck
+        John->>John: Fight against hypochondria
+    end
+    Note right of John: Rational thoughts <br/>prevail!
+    John-->>Alice: Great!
+    John->>Bob: How about you?
+    Bob-->>John: Jolly good!
+----
 
 == Coming soon
 image::images/beready.png[]
